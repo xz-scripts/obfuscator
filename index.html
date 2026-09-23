@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itzfernandooo Obfuscator Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>itzfernandooo Obfuscator Tools</h1>
+            <p class="subtitle">Obfuscate codes Lua</p>
+        </header>
+
+        <div class="editor-grid">
+            <div class="editor-box">
+                <label for="inputScript">Input Lua Code</label>
+                <textarea id="inputScript" placeholder="print('Hello World!')"></textarea>
+            </div>
+
+            <div class="editor-box">
+                <label for="outputScript">Obfuscated Code</label>
+                <textarea id="outputScript" readonly placeholder="Result will appear here..."></textarea>
+            </div>
+        </div>
+
+        <div class="status-bar" id="statusMessage">Ready</div>
+
+        <div class="controls">
+            <button class="secondary" onclick="clearAll()">Clear</button>
+            <button class="secondary" onclick="copyOutput()">Copy Result</button>
+            <button onclick="processLua()">Obfuscate</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
